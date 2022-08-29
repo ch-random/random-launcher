@@ -1,0 +1,12 @@
+.next
+.vscode
+dist
+dist-ssr
+node_modules
+
+*.local
+*.log
+*.py
+Cargo.lock
+memo.md
+package-lock.json
