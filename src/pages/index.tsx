@@ -19,7 +19,7 @@ function App() {
 
       <div className="row">
         <span className="logos">
-          <a href="https://nextjs.org" target="_blank">
+          <a href="/post">
             <Image
               width={144}
               height={144}
@@ -30,7 +30,7 @@ function App() {
           </a>
         </span>
         <span className="logos">
-          <a href="https://tauri.app" target="_blank">
+          <a href="/games/id">
             <Image
               width={144}
               height={144}
@@ -69,7 +69,7 @@ function App() {
             type="button"
             onClick={() => greet()}
             >
-            {/* className="px-4 py-2 focus:outline-none text-white font-bold rounded focus:bg-sky-500 bg-sky-600 hover:bg-sky-700" */}
+            {/* tailWindCSS: className="px-4 py-2 focus:outline-none text-white font-bold rounded focus:bg-sky-500 bg-sky-600 hover:bg-sky-700" */}
             Greet
           </button>
         </div>

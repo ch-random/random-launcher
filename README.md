@@ -1,8 +1,10 @@
 [![license](https://img.shields.io/badge/license-CC0--1.0-blue)](https://github.com/ch-random/random-launcher/blob/master/LICENSE)
 
-# random-launcher
+# Random Launcher
 
-白鷺祭2022の ch-ranodm の展示に使用するランチャーです。
+白鷺祭 2022 の ch-random の展示に使用するランチャーです。
+
+![capture.png](https://raw.githubusercontent.com/ch-random/random-launcher/master/docs/capture.png)
 
 ## License
 
