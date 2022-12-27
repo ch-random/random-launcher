@@ -94,7 +94,7 @@ export default function App({ id }: { id: string }) {
 }
 
 // https://reffect.co.jp/react/next-js
-export async function getStaticPaths() {
+export async function getServerSidePaths() {
   const paths = await getAllPaths();
   return {
     paths,
@@ -102,7 +102,7 @@ export async function getStaticPaths() {
   };
 }
 
-export async function getStaticProps({ params: { id } }) {
+export async function getServerSideProps({ params: { id } }) {
   return {
     props: {
       id,

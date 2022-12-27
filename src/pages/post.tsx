@@ -19,7 +19,7 @@ function App() {
         public: true,
         user: {
           role: "admin",
-          name: "chisato",
+          name: "takina",
         },
         articleGameContents: {
           execPath: "Neatly.exe",
@@ -54,7 +54,7 @@ function App() {
           </a>
         </span>
         <span className="logos">
-          <a href="/games/91aa7215-8f02-4f11-a34b-0c088b4eecab">
+          <a href="/games/3846f3a1-bd4e-4bbf-9fc1-a376df1258fa">
             <Image
               width={144}
               height={144}

@@ -81,11 +81,11 @@ export async function getArticles() {
 
 export async function getAllPaths() {
   // Error: Window is not defined
-  // const articles = await getArticles();
-  // console.log("(getAllPaths) articles:", articles);
-  // const keys = [...articles.keys()];
+  const articles = await getArticles();
+  console.log("(getAllPaths) articles:", articles);
+  const keys = [...articles.keys()];
 
-  const keys = [""];
+  // const keys = [""];
 
   // console.log("keys:", keys);
 
