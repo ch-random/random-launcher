@@ -2,11 +2,13 @@
 // import { invoke } from "@tauri-apps/api/tauri";
 import { getClient, Body, ResponseType } from "@tauri-apps/api/http";
 import Image from "next/image";
+import reactLogo from "../assets/react.svg";
 import tauriLogo from "../assets/tauri.svg";
+import nextLogo from "../assets/next.svg";
 
 function App() {
   async function post() {
-    const client = await getClient({ connectTimeout: 2, maxRedirections: 3 });
+    const client = await getClient();
     // https://github.com/tauri-apps/tauri/discussions/3253
     const res = await client.request({
       url: "https://random-launcher.fly.dev/articles",
@@ -39,17 +41,41 @@ function App() {
   }
   return (
     <div>
-      <span className="logos">
-        <a href="/games/id">
-          <Image
-            width={144}
-            height={144}
-            src={tauriLogo}
-            className="logo tauri"
-            alt="Tauri logo"
-          />
-        </a>
-      </span>
+      <div className="row">
+        <span className="logos">
+          <a href="/post">
+            <Image
+              width={144}
+              height={144}
+              src={nextLogo}
+              className="logo next"
+              alt="Next logo"
+            />
+          </a>
+        </span>
+        <span className="logos">
+          <a href="/games/91aa7215-8f02-4f11-a34b-0c088b4eecab">
+            <Image
+              width={144}
+              height={144}
+              src={tauriLogo}
+              className="logo tauri"
+              alt="Tauri logo"
+            />
+          </a>
+        </span>
+        <span className="logos">
+          <a href="https://reactjs.org" target="_blank">
+            <Image
+              width={144}
+              height={144}
+              src={reactLogo}
+              className="logo react"
+              alt="React logo"
+            />
+          </a>
+        </span>
+      </div>
       <div className="row">
         <div>
           <button type="button" onClick={() => post()}>

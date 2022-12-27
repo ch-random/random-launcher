@@ -1,0 +1,7 @@
+[package]
+name = "random-launcher"
+version = "0.0.1"
+
+[[bin]]
+name = "main"
+path = "src-tauri/src/main.rs"
