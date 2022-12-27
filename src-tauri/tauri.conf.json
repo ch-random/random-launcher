@@ -35,7 +35,7 @@
         "icons/128x128@2x.png",
         "icons/icon.ico"
       ],
-      "identifier": "com.tauri.dev",
+      "identifier": "random-launcher",
       "longDescription": "",
       "macOS": {
         "entitlements": null,

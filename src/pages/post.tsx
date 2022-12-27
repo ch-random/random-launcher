@@ -1,10 +1,7 @@
 // import { useState } from "react";
 // import { invoke } from "@tauri-apps/api/tauri";
 import { getClient, Body, ResponseType } from "@tauri-apps/api/http";
-import Image from "next/image";
-import reactLogo from "../assets/react.svg";
-import tauriLogo from "../assets/tauri.svg";
-import nextLogo from "../assets/next.svg";
+// import Image from "next/image";
 
 function App() {
   async function post() {
@@ -40,50 +37,13 @@ function App() {
     console.log("res:", res);
   }
   return (
-    <div>
-      <div className="row">
-        <span className="logos">
-          <a href="/post">
-            <Image
-              width={144}
-              height={144}
-              src={nextLogo}
-              className="logo next"
-              alt="Next logo"
-            />
-          </a>
-        </span>
-        <span className="logos">
-          <a href="/games/3846f3a1-bd4e-4bbf-9fc1-a376df1258fa">
-            <Image
-              width={144}
-              height={144}
-              src={tauriLogo}
-              className="logo tauri"
-              alt="Tauri logo"
-            />
-          </a>
-        </span>
-        <span className="logos">
-          <a href="https://reactjs.org" target="_blank">
-            <Image
-              width={144}
-              height={144}
-              src={reactLogo}
-              className="logo react"
-              alt="React logo"
-            />
-          </a>
-        </span>
+    <>
+      <div>
+        <button type="button" onClick={() => post()}>
+          Post
+        </button>
       </div>
-      <div className="row">
-        <div>
-          <button type="button" onClick={() => post()}>
-            Post
-          </button>
-        </div>
-      </div>
-    </div>
+    </>
   );
 }
 

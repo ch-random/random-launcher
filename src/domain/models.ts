@@ -38,10 +38,12 @@ export interface ArticleOwner {
 };
 
 export interface ArticleTag {
+  id: string;
   name: string;
 };
 
 export interface ArticleComment {
+  id: string;
   created_at: string;
   updated_at: string;
   body: string;
@@ -49,5 +51,6 @@ export interface ArticleComment {
 };
 
 export interface ArticleImageUrl {
+  id: string;
   image_url: string;
 };

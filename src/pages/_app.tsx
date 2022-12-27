@@ -1,8 +1,7 @@
 import React from "react";
 import type { AppProps } from "next/app";
 
-import "../style.css";
-import "../App.css";
+import "bulma/css/bulma.css";
 import reportWebVitals from "../utils/reportWebVitals";
 
 // https://bit.ly/CRA-vitals

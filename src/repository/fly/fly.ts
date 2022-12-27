@@ -75,7 +75,7 @@ export async function getArticles() {
   //     },
   //   ],
   // ]);
-  // console.log("(getArticles) articles:", articles);
+  console.log("(getArticles) articles:", articles);
   return articles;
 }
 

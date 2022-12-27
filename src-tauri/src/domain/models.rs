@@ -52,11 +52,13 @@ pub struct ArticleOwner {
 
 #[derive(Clone, Debug, Serialize, Deserialize)]
 pub struct ArticleTag {
+    id: String,
     name: String,
 }
 
 #[derive(Clone, Debug, Serialize, Deserialize)]
 pub struct ArticleComment {
+    id: String,
     // created_at: DateTime<FixedOffset>,
     // updated_at: DateTime<FixedOffset>,
     created_at: String,
@@ -67,6 +69,7 @@ pub struct ArticleComment {
 
 #[derive(Clone, Debug, Serialize, Deserialize)]
 pub struct ArticleImageUrl {
+    id: String,
     image_url: String,
 }
 

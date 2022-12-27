@@ -43,10 +43,6 @@ use article::*;
 //     let id = article.id;
 //     format!("Hello, {}! You've been greeted from Rust!", name)
 // }
-#[tauri::command]
-fn greet(name: &str) -> String {
-    format!("Hello, {}! You've been greeted from Rust!", name)
-}
 
 // async fn manage_articles(app: &mut App) -> Result<()> {
 //     let articles = article::fetch_articles().await?;
@@ -65,7 +61,6 @@ pub async fn main() -> Result<(), Box<dyn std::error::Error>> {
     let articles = handle.await.expect("failed to handle articles");
     tauri::Builder::default()
         .invoke_handler(tauri::generate_handler![
-            greet,
             get_articles,
             insert_article,
             update_article,
